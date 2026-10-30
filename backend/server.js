@@ -55,7 +55,7 @@ app.use((req, res) => {
 // Centralized error handler
 app.use(errorHandler);
 
-// Start server
+// Start server if run directly
 async function startServer() {
   await testConnection();
   app.listen(PORT, () => {
@@ -64,4 +64,8 @@ async function startServer() {
   });
 }
 
-startServer();
+if (require.main === module) {
+  startServer();
+}
+
+module.exports = app;
