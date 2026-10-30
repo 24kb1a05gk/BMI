@@ -67,14 +67,10 @@ export default function Footer() {
 
           {/* Contact & Disclaimer */}
           <div className="space-y-3">
-            <h4 className="text-white font-semibold text-base mb-4 font-heading">Get in Touch</h4>
+            <h4 className="text-white font-semibold text-base mb-4 font-heading">Support & Care</h4>
             <p className="text-sm text-[#DCEBDD]/80 flex items-center gap-2">
               <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>24kb1a05gk@nbkrist.org</span>
-            </p>
-            <p className="text-sm text-[#DCEBDD]/80 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Andhra Pradesh, India</span>
+              <span>support@nutrilife.com</span>
             </p>
             <div className="p-3 rounded-xl bg-[#1b3d2b] border border-[#2b563c] mt-4 text-xs text-[#DCEBDD]/70 leading-relaxed">
               <strong className="text-white block mb-0.5">Medical Disclaimer:</strong>

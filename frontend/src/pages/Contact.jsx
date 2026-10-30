@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Send, HelpCircle, CheckCircle2, MessageSquare, Github } from 'lucide-react';
+import { Mail, Send, HelpCircle, CheckCircle2, MessageSquare, Clock, Headphones } from 'lucide-react';
 import { useToast } from '../context/ToastContext';
 
 export default function Contact() {
@@ -164,7 +164,7 @@ export default function Contact() {
         <div className="lg:col-span-5 space-y-6">
           <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#DCEBDD] shadow-sm space-y-5">
             <h3 className="font-bold text-lg text-[#234B35] font-heading">
-              Contact Information
+              Support & Inquiries
             </h3>
 
             <div className="space-y-4 text-sm text-[#25312A]">
@@ -173,37 +173,30 @@ export default function Contact() {
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold uppercase text-gray-400">Email Address</div>
-                  <a href="mailto:24kb1a05gk@nbkrist.org" className="text-[#234B35] font-semibold hover:underline">
-                    24kb1a05gk@nbkrist.org
+                  <div className="text-xs font-bold uppercase text-gray-400">Support Email</div>
+                  <a href="mailto:support@nutrilife.com" className="text-[#234B35] font-semibold hover:underline">
+                    support@nutrilife.com
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
                 <div className="w-9 h-9 rounded-xl bg-[#DCEBDD] text-[#234B35] flex items-center justify-center shrink-0">
-                  <Github className="w-4 h-4" />
+                  <Headphones className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold uppercase text-gray-400">GitHub Repository</div>
-                  <a
-                    href="https://github.com/24kb1a05gk/BMI.git"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-[#234B35] font-semibold hover:underline break-all"
-                  >
-                    github.com/24kb1a05gk/BMI
-                  </a>
+                  <div className="text-xs font-bold uppercase text-gray-400">Help Desk</div>
+                  <span className="text-[#234B35] font-semibold">NutriLife Member Care Team</span>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
                 <div className="w-9 h-9 rounded-xl bg-[#DCEBDD] text-[#234B35] flex items-center justify-center shrink-0">
-                  <MapPin className="w-4 h-4" />
+                  <Clock className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold uppercase text-gray-400">Location</div>
-                  <span className="text-[#234B35] font-semibold">Andhra Pradesh, India</span>
+                  <div className="text-xs font-bold uppercase text-gray-400">Operating Hours</div>
+                  <span className="text-[#234B35] font-semibold">Monday – Saturday, 9:00 AM – 7:00 PM IST</span>
                 </div>
               </div>
             </div>
