@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #557C55;
+  --color-primary-dark: #234B35;
+  --color-primary-light: #DCEBDD;
+  --color-cream: #F8F8F2;
+  --color-text-dark: #25312A;
+  
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom Base & Utility Classes */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F8F8F2;
+  color: #25312A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F8F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D7C5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #557C55;
+}
+
+/* Glassmorphism & Soft Glows */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(220, 235, 221, 0.8);
+}
+
+.glow-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glow-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -10px rgba(85, 124, 85, 0.25);
+}
